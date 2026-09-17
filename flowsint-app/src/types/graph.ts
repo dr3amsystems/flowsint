@@ -73,6 +73,7 @@ export type GraphEdge = {
   type?: string
   weight?: number
   confidence_level?: number | string
+  metadata?: Record<string, unknown>
 }
 
 // The imperative handle exposed by <ForceGraph2D<GraphNode, GraphEdge>
