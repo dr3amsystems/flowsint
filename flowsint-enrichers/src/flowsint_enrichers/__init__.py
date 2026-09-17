@@ -6,7 +6,7 @@ Flowsint Enrichers - Enricher modules for flowsint
 from .registry import ENRICHER_REGISTRY, flowsint_enricher, load_all_enrichers
 
 __version__ = "0.1.0"
-__author__ = "dextmorgn <contact@flowsint.io>"
+__author__ = "AgenticVaultAI and Flowsint contributors"
 
 __all__ = [
     "ENRICHER_REGISTRY",
