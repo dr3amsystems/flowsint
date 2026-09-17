@@ -50,4 +50,9 @@ describe('security graph workbench model', () => {
   it('returns null when the graph is disconnected', () => {
     expect(findSecurityGraphPath(edges, 'alert', 'missing')).toBeNull()
   })
+
+  it('cannot route through entities removed by a filter', () => {
+    const visible = filterSecurityGraph(nodes, edges, '', new Set(['alert', 'resource']))
+    expect(findSecurityGraphPath(visible.edges, 'alert', 'resource')).toBeNull()
+  })
 })

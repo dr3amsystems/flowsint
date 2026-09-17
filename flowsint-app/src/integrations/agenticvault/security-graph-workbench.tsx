@@ -74,7 +74,7 @@ const downloadBlob = (contents: BlobPart, type: string, filename: string) => {
   URL.revokeObjectURL(url)
 }
 
-export const SecurityGraphWorkbench = ({
+const SecurityGraphWorkbenchView = ({
   document,
   height = 'min(78vh, 860px)',
   onNavigate,
@@ -117,7 +117,13 @@ export const SecurityGraphWorkbench = ({
 
   useEffect(() => {
     const handleKey = (event: KeyboardEvent) => {
-      if (event.key === '/' && window.document.activeElement !== searchRef.current) {
+      const activeElement = window.document.activeElement
+      const isEditing =
+        activeElement instanceof HTMLInputElement ||
+        activeElement instanceof HTMLTextAreaElement ||
+        activeElement instanceof HTMLSelectElement ||
+        activeElement?.getAttribute('contenteditable') === 'true'
+      if (event.key === '/' && !isEditing) {
         event.preventDefault()
         searchRef.current?.focus()
       }
@@ -138,9 +144,9 @@ export const SecurityGraphWorkbench = ({
   const path = useMemo(
     () =>
       pathEndpoints.length === 2
-        ? findSecurityGraphPath(graph.edges, pathEndpoints[0], pathEndpoints[1])
+        ? findSecurityGraphPath(filtered.edges, pathEndpoints[0], pathEndpoints[1])
         : null,
-    [graph.edges, pathEndpoints]
+    [filtered.edges, pathEndpoints]
   )
   const pathNodeIds = useMemo(() => new Set(path?.nodeIds ?? []), [path])
   const pathEdgeIds = useMemo(() => new Set(path?.edgeIds ?? []), [path])
@@ -472,6 +478,15 @@ export const SecurityGraphWorkbench = ({
       </footer>
     </section>
   )
+}
+
+export const SecurityGraphWorkbench = (props: SecurityGraphWorkbenchProps) => {
+  const documentKey = [
+    props.document.source.product,
+    props.document.source.tenant_id,
+    props.document.source.generated_at
+  ].join(':')
+  return <SecurityGraphWorkbenchView key={documentKey} {...props} />
 }
 
 export default SecurityGraphWorkbench
