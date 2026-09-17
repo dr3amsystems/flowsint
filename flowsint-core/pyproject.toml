@@ -1,8 +1,8 @@
 [project]
 name = "flowsint-core"
 version = "1.2.11"
-description = "Core utilities and base classes for flowsint modules"
-authors = [{ name = "dextmorgn", email = "contact@flowsint.io" }]
+description = "Core utilities and base classes for AgenticVault Security Graph"
+authors = [{ name = "AgenticVaultAI and Flowsint contributors" }]
 requires-python = ">=3.12,<4.0"
 dependencies = [
     "flowsint-enrichers",

@@ -1,9 +1,9 @@
 [project]
 name = "flowsint-api"
 version = "1.2.11"
-description = "API server for flowsint"
+description = "API server for AgenticVault Security Graph"
 license = "Apache-2.0"
-authors = [{ name = "dextmorgn", email = "contact@flowsint.io" }]
+authors = [{ name = "AgenticVaultAI and Flowsint contributors" }]
 requires-python = ">=3.12,<4.0"
 dependencies = [
     "flowsint-core",

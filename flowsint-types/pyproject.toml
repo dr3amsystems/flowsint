@@ -1,9 +1,9 @@
 [project]
 name = "flowsint-types"
 version = "1.2.11"
-description = "Pydantic models for flowsint"
+description = "Pydantic models for AgenticVault Security Graph"
 license = "Apache-2.0"
-authors = [{ name = "dextmorgn", email = "contact@flowsint.io" }]
+authors = [{ name = "AgenticVaultAI and Flowsint contributors" }]
 requires-python = ">=3.12,<4.0"
 dependencies = [
     "pydantic>=2.0,<3.0",
