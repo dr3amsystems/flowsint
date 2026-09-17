@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AgenticVault mark">
+  <g fill="none" stroke="#FFB200" stroke-width="5">
+    <path d="M21 12 H11 V52 H21"/>
+    <path d="M43 12 H53 V52 H43"/>
+  </g>
+  <circle cx="32" cy="32" r="12" fill="#FFB200"/>
+  <path d="M27.5 26.5 L37 32 L27.5 37.5" fill="none" stroke="#0A0A0B" stroke-width="4" stroke-linecap="square"/>
+</svg>

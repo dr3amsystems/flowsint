@@ -79,7 +79,11 @@ function FloatingChat() {
                     variant="outline"
                     onClick={toggleChat}
                   >
-                    <img src="/icon.png" alt="Flowsint" className="h-12 w-12 object-contain" />
+                    <img
+                      src="/agenticvault-mark.svg"
+                      alt="AgenticVault"
+                      className="h-12 w-12 object-contain"
+                    />
                   </Button>
                 </div>
               </TooltipTrigger>
@@ -166,9 +170,9 @@ function FloatingChat() {
                                 <div className="absolute inset-0 bg-linear-to-r from-primary/20 to-primary/10 rounded-full blur-xl animate-pulse"></div>
                                 <div className="relative bg-linear-to-br from-primary/10 to-primary/5 rounded-full p-4 border border-primary/20">
                                   <img
-                                    src="/icon.png"
-                                    alt="Flowsint"
-                                    className="h-12 w-12 object-cover"
+                                    src="/agenticvault-mark.svg"
+                                    alt="AgenticVault"
+                                    className="h-12 w-12 object-contain"
                                   />
                                 </div>
                               </div>
@@ -197,7 +201,7 @@ function FloatingChat() {
                               <div className="space-y-2 max-w-sm">
                                 <h3 className="text-lg font-semibold text-foreground">
                                   Start your conversation with{' '}
-                                  <span className="text-primary">Flo</span>
+                                  <span className="text-primary">AVA</span>
                                 </h3>
                                 <p className="text-sm opacity-70">
                                   Ask me anything about your investigation. Here are some examples:

@@ -1,12 +1,12 @@
 {
-  "name": "flowsint-app",
-  "productName": "Flowsint",
+  "name": "agenticvault-security-graph",
+  "productName": "AgenticVault Security Graph",
   "license": "Apache-2.0",
   "version": "1.2.12",
   "type": "module",
-  "description": "Graph analysis and intelligence platform to help you discover hidden relationships and insights.",
-  "author": "DexterMorgan",
-  "homepage": "https://www.flowsint.io/",
+  "description": "AgenticVault graph investigation platform for findings, evidence, resources, and attack paths.",
+  "author": "AgenticVaultAI and Flowsint contributors",
+  "homepage": "https://agenticvaultai.com/",
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",

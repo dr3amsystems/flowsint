@@ -1,31 +1,21 @@
-# Flowsint
+# AgenticVault Security Graph
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
 [![Ethical Software](https://img.shields.io/badge/ethical-use-blue.svg)](./ETHICS.md)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20coffee-support-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/dextmorgn)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-support-F16061?logo=ko-fi&logoColor=white)](https://ko-fi.com/P5P01W3GPJ)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&logoColor=white)](https://discord.gg/aST9HMQr)
+AgenticVault Security Graph is the shared investigation workspace for AgenticVault CSPM, SOC,
+and AIOps. It connects findings, alerts, cloud resources, evidence, identities, enrichments, and
+attack paths through the versioned `agenticvault.graph/v1` contract.
 
-
-Flowsint is an open-source OSINT graph exploration tool designed for ethical investigation, transparency, and verification.
+This repository is AgenticVaultAI's Apache-2.0 fork of
+[Flowsint](https://github.com/reconurge/flowsint). The original project and its contributors are
+credited in [NOTICE](./NOTICE). Existing `flowsint-*` module, environment, and storage identifiers
+remain where they are required for source and deployment compatibility.
 
 **Ethics:** Please read [ETHICS.md](./ETHICS.md) for responsible use guidelines.
 
-<img width="1439" height="899" alt="hero-dark" src="https://github.com/user-attachments/assets/01eb128e-bef4-486e-9276-c4da58f829ae" />
-
-
-https://github.com/user-attachments/assets/eaabfa81-d7b3-414d-8cf7-f69b4e37bab6
-
-
-https://github.com/user-attachments/assets/7457d94a-cf1d-4a97-949f-f9b1d8d92644
-
-
-https://github.com/user-attachments/assets/65c3f26e-7132-4853-be45-21b8933688bd
-
-
 ## Contributing
 
-Flowsint is still in early development and definetly needs the help of the community! Feel free to raise issues, propose features, etc.
+Contributions should preserve the shared graph contract, product adapters, and upstream attribution.
 
 ## Get started
 
@@ -41,7 +31,7 @@ Don't want to read ? Got it. Here's your install instructions:
 #### 2. Run install command
 
 ```bash
-git clone https://github.com/reconurge/flowsint.git
+git clone https://github.com/dr3amsystems/flowsint.git
 cd flowsint
 make prod
 ```
@@ -58,7 +48,7 @@ No Make needed. Works in both **Command Prompt (cmd)** and **PowerShell**.
 #### 2. Clone and set up environment files
 
 ```bat
-git clone https://github.com/reconurge/flowsint.git
+git clone https://github.com/dr3amsystems/flowsint.git
 cd flowsint
 
 copy .env.example .env
@@ -87,14 +77,14 @@ Then go to [http://localhost:5173/register](http://localhost:5173/register) and 
 The same setup works out of the box on a server: the frontend serves the UI **and** proxies all API calls internally, so no extra configuration is needed for clients.
 
 ```bash
-git clone https://github.com/reconurge/flowsint.git
+git clone https://github.com/dr3amsystems/flowsint.git
 cd flowsint
 cp .env.example .env
 # Edit .env — see "Before exposing to a network" below
 docker compose -f docker-compose.prod.yml up -d
 ```
 
-Anyone on the network can then access Flowsint at `http://<server-ip>:5173`.
+Anyone on the network can then access AgenticVault Security Graph at `http://<server-ip>:5173`.
 
 **Before exposing to a network, change the default secrets in `.env`:**
 
@@ -121,7 +111,9 @@ When fronting with a reverse proxy, also bind the app port to localhost in `dock
 
 ## What is it?
 
-Flowsint is a graph-based investigation tool focused on reconnaissance and OSINT (Open Source Intelligence). It allows you to explore relationships between entities through a visual graph interface and automated enrichers.
+AgenticVault Security Graph combines security operations context with the upstream graph exploration
+and enrichment capabilities. It lets analysts verify relationships between findings, evidence,
+resources, identities, infrastructure, and other investigation entities.
 
 ### Available Enrichers
 
@@ -324,7 +316,7 @@ uv run pytest
 
 **Ethics:** Please read [ETHICS.md](./ETHICS.md) for responsible use guidelines.
 
-Flowsint is designed **strictly for lawful, ethical investigation and research purposes**.
+AgenticVault Security Graph is designed **strictly for lawful, ethical investigation and research purposes**.
 
 It was created to assist:
 - Cybersecurity researchers and analysts
@@ -332,14 +324,9 @@ It was created to assist:
 - Law enforcement or fraud investigation teams
 - Organizations conducting internal threat intelligence or digital risk analysis
 
-**Flowsint must not be used for:**
+**AgenticVault Security Graph must not be used for:**
 - Unauthorized intrusion, surveillance, or data collection
 - Harassment, doxxing, or targeting of individuals
 - Political manipulation, misinformation, or violation of privacy laws
 
 Any misuse of this software is strictly prohibited and goes against the ethical principles defined in [ETHICS.md](./ETHICS.md).
-
-## ❤️ Support
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20coffee-support-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/dextmorgn)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-support-F16061?logo=ko-fi&logoColor=white)](https://ko-fi.com/P5P01W3GPJ)

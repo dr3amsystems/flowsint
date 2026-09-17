@@ -54,8 +54,8 @@ export const TopNavbar = memo(() => {
     >
       <div className="flex items-center gap-4">
         <Link to="/dashboard" className="flex items-center gap-2">
-          <img src="/icon.png" alt="Flowsint" className="h-8 w-8" />
-          <span className="text-lg font-semibold">Flowsint</span>
+          <img src="/agenticvault-mark.svg" alt="AgenticVault" className="h-8 w-8" />
+          <span className="text-lg font-semibold">AgenticVault Graph</span>
         </Link>
         <div className="hidden lg:flex items-center gap-2">
           {investigationId && <InvestigationSelector />}
@@ -186,7 +186,7 @@ export function InvestigationMenu({
             className="h-full w-full"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/reconurge/flowsint"
+            href="https://github.com/dr3amsystems/flowsint"
           >
             GitHub
           </a>
@@ -196,7 +196,7 @@ export function InvestigationMenu({
             className="h-full w-full"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/reconurge/flowsint/issues"
+            href="https://github.com/dr3amsystems/flowsint/issues"
           >
             Support
           </a>

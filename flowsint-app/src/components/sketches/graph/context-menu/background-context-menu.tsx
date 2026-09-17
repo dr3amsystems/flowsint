@@ -449,7 +449,7 @@ const SubActions = memo(({ selectedNodes }: SubActionsProps) => {
     const href = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = href
-    link.download = `flowsint-selection-${new Date().toISOString().replace(/[:.]/g, '-')}.json`
+    link.download = `agenticvault-graph-selection-${new Date().toISOString().replace(/[:.]/g, '-')}.json`
     document.body.appendChild(link)
     link.click()
     link.remove()
