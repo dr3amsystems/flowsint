@@ -175,10 +175,10 @@ class EnricherTemplateGenerateRequest(BaseModel):
         description="Free-text description of the desired enricher template",
     )
     input_type: Optional[str] = Field(
-        None, description="Flowsint input type name (e.g. 'Ip', 'Domain')"
+        None, description="AgenticVault Security Graph input type name (e.g. 'Ip', 'Domain')"
     )
     output_type: Optional[str] = Field(
-        None, description="Flowsint output type name (e.g. 'Ip', 'SocialAccount')"
+        None, description="AgenticVault Security Graph output type name (e.g. 'Ip', 'SocialAccount')"
     )
 
 

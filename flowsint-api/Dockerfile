@@ -72,8 +72,8 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5001", "--reload
 # PROD
 FROM python:3.12-slim AS production
 
-LABEL org.opencontainers.image.source="https://github.com/reconurge/flowsint"
-LABEL org.opencontainers.image.description="Flowsint API & Worker"
+LABEL org.opencontainers.image.source="https://github.com/dr3amsystems/flowsint"
+LABEL org.opencontainers.image.description="AgenticVault Security Graph API & Worker"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
 
 ENV PYTHONUNBUFFERED=1 \

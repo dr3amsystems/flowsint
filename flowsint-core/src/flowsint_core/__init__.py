@@ -16,4 +16,4 @@ from .core.vault import *
 from .utils import *
 
 __version__ = "0.1.0"
-__author__ = "dextmorgn <contact@flowsint.io>"
+__author__ = "AgenticVaultAI and Flowsint contributors"

@@ -19,8 +19,8 @@ RUN yarn build
 
 FROM nginx:1.29-alpine AS production
 
-LABEL org.opencontainers.image.source="https://github.com/reconurge/flowsint"
-LABEL org.opencontainers.image.description="Flowsint Frontend"
+LABEL org.opencontainers.image.source="https://github.com/dr3amsystems/flowsint"
+LABEL org.opencontainers.image.description="AgenticVault Security Graph Frontend"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
 
 RUN addgroup -g 1001 -S flowsint && \

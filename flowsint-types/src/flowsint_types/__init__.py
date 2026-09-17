@@ -54,7 +54,7 @@ from .whois import Whois
 load_all_types()
 
 __version__ = "0.1.0"
-__author__ = "dextmorgn <contact@flowsint.io>"
+__author__ = "AgenticVaultAI and Flowsint contributors"
 
 __all__ = [
     "Location",

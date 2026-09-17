@@ -4,7 +4,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 
 class TemplateInput(BaseModel):
-    type: str = Field(..., description="Flowsint Type the template takes as input")
+    type: str = Field(..., description="AgenticVault Security Graph Type the template takes as input")
     key: str = Field(
         default="nodeLabel",
         description="Key attribute to extract from input type for template variables",
@@ -13,7 +13,7 @@ class TemplateInput(BaseModel):
 
 class TemplateOutput(BaseModel):
     type: str = Field(
-        ..., description="Flowsint Type that the template should return as an output."
+        ..., description="AgenticVault Security Graph Type that the template should return as an output."
     )
     # If response is an array, this allows mapping each item to an output
     is_array: bool = Field(

@@ -39,7 +39,7 @@ class N8nConnector(Enricher):
         return """
 # n8n Connector
 
-Connect to your custom n8n workflows to process data through webhooks. This connector allows you to leverage n8n's powerful automation capabilities within your Flowsint investigations.
+Connect to your custom n8n workflows to process data through webhooks. This connector allows you to leverage n8n's powerful automation capabilities within your AgenticVault Security Graph investigations.
 
 ## Setup Instructions
 
@@ -205,7 +205,7 @@ The connector provides detailed logging:
 - Response status and content
 - Processing results
 
-Check Flowsint logs for detailed debugging information.
+Check AgenticVault Security Graph logs for detailed debugging information.
 
 ## Resources
 
